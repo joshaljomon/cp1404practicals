@@ -4,7 +4,6 @@ Program for temperature conversion
 """
 
 def main():
-    global celsius, fahrenheit
     MENU = """C - Convert Celsius to Fahrenheit
 F - Convert Fahrenheit to Celsius
 Q - Quit"""
@@ -27,13 +26,11 @@ Q - Quit"""
 
 
 def change_celsius_to_fahrenheit():
-    global fahrenheit
-    fahrenheit = celsius * 9.0 / 5 + 32
+    return celsius * 9.0 / 5 + 32
 
 
 def change_fahrenheit_to_celsius():
-    global celsius
-    celsius = 5 / 9 * (fahrenheit - 32)
+    return 5 / 9 * (fahrenheit - 32)
 
 
 main()
